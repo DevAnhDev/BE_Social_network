@@ -15,6 +15,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended:true}));
 
 // get image in file upload
+
 app.use('/upload', express.static('Upload'));
 app.use('/uploads',require("./Route/upload.route"));
 app.use('/user',require('./Route/user.route'));
